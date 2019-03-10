@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Portofolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form id="form1" class="my-2 my-lg-0 d-flex w-100">
+                <div class="input-group">
+                    <div class="col-sm-3">
+                        <input id="stock" autofocus class="form-control mr-sm-2" type="text" placeholder="Stock" required>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="number" autofocus class="form-control mr-sm-2" type="text" placeholder="Number" required>
+                    </div>
+             
+                    <div class="col-sm-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="choice" id="buy" value="buy" checked>
+                            <label class="form-check-label" for="buy">
+                                Buy
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="choice" id="sell" value="sell">
+                            <label class="form-check-label" for="sell">
+                                Sell
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" form="form1" class="btn btn-primary" value="submit">Submit</button>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                        <a class="navbar-brand" href="/">Total:  <span id="total"></span></a>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+
+        
+    </nav>
+    <br>
+
+    <div class="container">
+        <div id="portofolio"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="portfolio.js"></script>
+
+    <script>
+        const tmdb_api_key = "sk_3b3fc9da61e64f12ac2d9d607df85e2a";
+
+    </script>
+
+</body>
+
+</html>

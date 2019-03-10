@@ -1,0 +1,30 @@
+  .row{
+    background-color: #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  #movies .col-md-3 img{
+    height:240px;
+  }
+
+  @media (max-width: 600px) {
+  .column-margin {
+    margin: 25px 50px 0px 50px;
+  }
+}
+.overview{
+     text-align: justify;
+}
+
+
+.year{
+    font-size: 16px;
+    color: #666666
+}
+
+.name{
+    font-weight:normal;
+    font-size: 18px;
+    color: #666666
+}
+
