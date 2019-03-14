@@ -12,6 +12,7 @@ $("#form1").on("submit", function (event){
 var stocks_set = new Set()
 var current_stock
  
+// default page
 function defaultPage(){
     if (localStorage.getItem('order') == '1'){
         sortByName()
